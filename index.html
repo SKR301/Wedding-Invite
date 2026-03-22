@@ -45,7 +45,7 @@
 
 		.ganesh-text {
 			opacity: 0;
-			font-size: 20px;
+			font-size: 40px;
 			margin-top: 10px;
 			transform: translateY(20px);
 			animation: fadeRise 2s ease-out forwards;
@@ -193,11 +193,11 @@
 		}
 
 		.title {
-			font-size: 32px;
+			font-size: 64px;
 		}
 
 		.subtitle {
-			font-size: 20px;
+			font-size: 32px;
 			margin-bottom: 32px;
 		}
 
@@ -213,13 +213,13 @@
 		}
 
 		.names {
-			font-size: 24px;
+			font-size: 48px;
 			font-weight: bold;
 			margin-bottom: 12px;
 		}
 
 		.parents {
-			font-size: 14px;
+			font-size: 28px;
 		}
 
 		.and-ring {
@@ -238,7 +238,7 @@
 		}
 
 		.and-text {
-			font-size: 20px;
+			font-size: 40px;
 			z-index: 2;
 		}
 
@@ -277,14 +277,14 @@
 		}
 
 		.invite-line {
-			font-size: 16px;
+			font-size: 32px;
 			margin-bottom: 15px;
 		}
 		
 		.footnote {
 			margin-top: 200px;
-			font-size: 16px;
-			max-width: 450px;
+			font-size: 32px;
+			max-width: 750px;
     		opacity: 0;
 		}
 
@@ -303,6 +303,7 @@
 			display: flex;
 			gap: 15px;
 			margin: 20px 0;
+			font-size: 40px;
 			transition: gap 0.8s ease, transform 0.8s ease;
 		}
 		.coin-wrap.compact {
@@ -317,12 +318,12 @@
 		}
 
 		.coin {
-			width: 90px;
-			height: 90px;
+			width: 200px;
+			height: 200px;
 			border-radius: 50%;
 			display: flex;
-			margin-left: 15px;
-			margin-right: 15px;
+			margin-left: 25px;
+			margin-right: 25px;
 			align-items: center;
 			justify-content: center;
 			font-family: 'Playfair Display', serif;
@@ -361,16 +362,12 @@
 		}
 
 		.box {
-			background: #fff3d6;
+			font-size: 32px;
 			padding: 10px;
-			border-radius: 10px
-		}
-
-		.box {
-			width: 80px;
-			height: 80px;
+			width: 160px;
+			height: 160px;
 			background: #fff3d6;
-			border-radius: 12px;
+			border-radius:24px;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -380,18 +377,19 @@
 
 		.couple-art {
 			position: absolute;
-			bottom: 0;
+			bottom: 20px;
+			width: 500px;
 			left: 50%;
 			transform: translateX(-50%);
-			width: 300px;
 			opacity: 0.85;
 			pointer-events: none;
-			filter: sepia(1) saturate(3) hue-rotate(-10deg) brightness(0.2);
+			filter: sepia(3) saturate(2) hue-rotate(0deg) brightness(1);
 		}
 
 		.countdown-text {
-			margin-top: 40px;
-			width: 400px;
+			font-size: 40px;
+			margin-top: 80px;
+			width: 750px;
 		}
 
 		.countdown-section {
@@ -408,13 +406,6 @@
 			margin-top: 20px;
 		}
 
-		.countdown-section .couple-art {
-			bottom: 20px;
-			width: 250px;
-			opacity: 0.9;
-			filter: sepia(3) saturate(2) hue-rotate(0deg) brightness(1);
-		}
-
 		.timeline {
 			position: relative;
 			margin-top: 20px;
@@ -424,7 +415,7 @@
 		.timeline::before {
 			content: "";
 			position: absolute;
-			left: 18px;
+			left: 5px;
 			top: 0;
 			width: 2px;
 			height: 100%;
@@ -453,10 +444,10 @@
 
 		.timeline-dot {
 			position: absolute;
-			left: 18px;              
+			left: 5px;              
 			transform: translateX(-50%); 
 
-			font-size: 16px;
+			font-size: 40px;
 			color: #d4af37;
 
 			display: flex;
@@ -477,7 +468,7 @@
 		}
 
 		.timeline-content {
-			margin-left: 45px;
+			margin-left: 44px;
 			text-align: left;
 			max-width: 400px;
 		}
@@ -489,16 +480,16 @@
 		}
 
 		.timeline-content h2 {
-			font-size: 20px;
+			font-size: 40px;
 			margin-bottom: 5px;
 		}
 
 		.timeline-venue {
-			font-size: 14px;
+			font-size: 28px;
 		}
 
 		.timeline-time {
-			font-size: 13px;
+			font-size: 28px;
 			opacity: 0.8;
 		}
 		
@@ -508,20 +499,20 @@
 		}
 
 		.timeline-item.minor h2 {
-			font-size: 16px;
+			font-size: 32px;
 		}
 
 		.timeline-item.minor .venue,
 		.timeline-item.minor .meta {
-			font-size: 12px;
+			font-size: 24px;
 		}
 
 		.timeline-item.minor .timeline-dot {
-			font-size: 14px;
+			font-size: 32px;
 		}
 
 		.timeline-item.minor {
-			margin-bottom: 25px;
+			margin-bottom: 24px;
 		}
 
 		.timeline-item.minor {
@@ -529,8 +520,8 @@
 		}
 
 		iframe {
-			width: 400px;
-			height: 250px;
+			width: 750px;
+			height: 400px;
 			padding: 5px;
 			border-radius: 15px;
 			border: 2px solid #b8860b;
@@ -539,7 +530,6 @@
 
 		.venue-art {
 			position: absolute;
-			/* top: 20px; */
 			bottom: 30px;
 			left: 50%;
 			transform: translateX(-50%);
@@ -550,12 +540,12 @@
 		}
 
 		.venue-name {
-			font-size: 20px;
+			font-size: 40px;
 			margin-top: 20px;
 		}
 
 		.venue-address {
-			font-size: 16px;
+			font-size: 32px;
 			opacity: 0.8;
 			margin-bottom: 10px;
 		}
@@ -569,14 +559,14 @@
 		}
 
 		.ending-line p {
-			font-size: 22px;
+			font-size: 44px;
 			letter-spacing: 1px;
 			line-height: 1.8;
 		}
 
 		.ending-line span {
 			display: block;
-			font-size: 18px;
+			font-size: 36px;
 			opacity: 0.8;
 			font-style: italic;
 		}
@@ -597,7 +587,7 @@
 
 		.om-symbol {
 			margin-top: 40px;
-			font-size: 22px;
+			font-size: 44px;
 			color: #b8860b;
 			opacity: 0.7;
 			text-align: center;
@@ -621,10 +611,10 @@
 
 	<!-- Section Couple -->
 	<section class="royal-invite fade-in">
-		<h3 class="invite-line">With the blessings of their families</h3>
+		<h3 class="subtitle">With the blessings of their families</h3>
 		
 		<h1 class="title">You Are Cordially Invited</h1>
-		<h2 class="subtitle">to the Wedding Ceremony of</h2>
+		<h4 class="subtitle">to the Wedding Ceremony of</h4>
 		
 		<div class="couple">
 			<div class="person">
@@ -650,8 +640,8 @@
 
 	<!-- Section STD -->
 	<section class="fade-in">
-		<h1>Reveal</h1>
-		<h4>Scratch to discover the date</h4>
+		<h1 class="title">Reveal</h1>
+		<h4 class="subtitle">Scratch to discover the date</h4>
 		<div class="coin-wrap">
 			<div class="coin"><span>27</span><canvas class="scratch"></canvas></div>
 			<div class="coin"><span>April</span><canvas class="scratch"></canvas></div>
@@ -661,7 +651,7 @@
 
 	<!-- Section Schedule  -->
 	<section class="fade-in">
-		<h1>Wedding Festivities</h1>
+		<h1 class="title">Wedding Festivities</h1>
 
 		<div class="timeline">
 			
@@ -733,7 +723,7 @@
 
 	<!-- Section Countdown -->
 	<section class="fade-in countdown-section">
-		<h1>Countdown</h1>
+		<h1 class="title">Countdown</h1>
 		<div class="count">
 			<div class="box"><span id="d"></span>Days</div>
 			<div class="box"><span id="h"></span>Hours</div>
@@ -748,10 +738,10 @@
 
 	<!-- Section venue -->
 	<section class="fade-in">
-		<h1>Venue</h1>
+		<h1 class="title">Venue</h1>
 		<h2 class="venue-name">Ayushman Utsav Palace</h2>
 		<p class="venue-address">Muzaffarpur, Bihar</p>
-		<iframe src="https://www.google.com/maps?q=Ayushman+Utsav+Palace,+Muzaffarpur&output=embed"></iframe>
+		<iframe src="https://www.google.com/maps?q=Ayushman+Utsav+Palace,+Muzaffarpur&z=17&output=embed"></iframe>
 		<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpurepng.com%2Fpublic%2Fuploads%2Fmedium%2Findia-c0j.png&f=1&nofb=1&ipt=663b87ad1a1712504c74d64c555bac748b8c063d499566ecb6c9b5be7883826f" class="venue-art">
 	</section>
 
@@ -786,7 +776,8 @@
 					angle: 60,
 					spread: 55,
 					origin: { x: 0, y: 0.6 },
-					colors: colors
+					colors: colors,
+					scalar: 2
 				});
 
 				// RIGHT side
@@ -795,7 +786,8 @@
 					angle: 120,
 					spread: 55,
 					origin: { x: 1, y: 0.6 },
-					colors: colors
+					colors: colors,
+					scalar: 2
 				});
 
 				if (Date.now() < end) {
@@ -937,16 +929,16 @@
 				let y = (e.touches ? e.touches[0].clientY : e.clientY) - r.top;
 
 				ctx.beginPath();
-				ctx.arc(x, y, 12, 0, Math.PI * 2);
+				ctx.arc(x, y, 24, 0, Math.PI * 2);
 				ctx.fill();
 
 				// check scratch %
 				if (getScratchedPercent(ctx, c.width, c.height) > 0.4) {
-					c.style.pointerEvents = "none"; // stop scratching immediately
+					c.style.pointerEvents = "none";
 
 					setTimeout(() => {
 						c.classList.add("revealed");
-						checkAllRevealed(); // 👈 ADD THIS
+						checkAllRevealed();
 					}, 150);
 				}
 			}
