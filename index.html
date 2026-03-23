@@ -1014,12 +1014,13 @@
 		}, { threshold: 0.4 });
 
 		timelineObserver.observe(timelineSection);
-
 		setTimeout(() => {
-			document.querySelectorAll('.countdown-text').forEach(el => {
-				el.classList.add('show');
+			document.querySelectorAll('.countdown-text').forEach((el, i) => {
+				setTimeout(() => {
+					el.classList.add('show');
+				}, i * 500);
 			});
-		}, 3500);
+		}, 3000);
 
 		setTimeout(() => {
 			document.querySelector('.couple-art').classList.add('show');
