@@ -394,7 +394,6 @@
 
 		.couple-art.show {
 			opacity: 0.85;
-			transform: translateX(-50%) translateY(0);
 		}
 
 		.countdown-text {
@@ -428,13 +427,14 @@
 		.shaloka {
 			position: absolute;
 			bottom: 200px;
-
 			text-align: center;
-
 			font-size: 30px;
 			opacity: 0;
-			animation: fadeRise 2s ease-out forwards;
-			animation-delay: 2s;
+			transition: opacity 3s ease, transform 3s ease;
+		}
+
+		.shaloka.show {
+			opacity: 0.85;
 		}
 
 		.timeline {
@@ -1037,7 +1037,8 @@
 				}, 1000);
 
 				setTimeout(() => {
-					document.querySelector('.couple-art').classList.add('show');
+					document.querySelector('.couple-art').classList.add('show');					
+					document.querySelector('.shaloka').classList.add('show');
 				}, 2000);
 
 				obs.disconnect();
