@@ -1124,10 +1124,8 @@
 			}
 
 			if (currentSection && currentSection.classList.contains("countdown-section")) {
-				window.scrollTo({
-					top: document.body.scrollHeight,
-					behavior: "smooth"
-				});
+				const endElement = document.querySelector(".ending-line");
+				smoothScrollTo(endElement.offsetTop, 2000);
 				return;
 			}
 
